@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                 alt="Canela Logo" 
                 className="h-12 w-12 rounded-full object-cover"
               />
-              <h3 className="text-xl font-serif font-semibold">Canela</h3>
+              <h3 className="text-xl font-serif font-semibold">Canela Panadería Artesanal</h3>
             </div>
             <p className="text-primary-100 mb-4">
               Elaboramos productos de la más alta calidad con ingredientes naturales y el sabor de siempre.
