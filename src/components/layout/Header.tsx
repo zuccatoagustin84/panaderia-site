@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             alt="Canela Logo" 
             className="h-12 w-12 rounded-full object-cover"
           />
-          <span className="font-serif text-2xl font-bold text-primary-600">Canela Panadería Artesanalnela</span>
+          <span className="font-serif text-2xl font-bold text-primary-600">Canela Panadería Artezanal</span>
         </Link>
 
         {/* Desktop Navigation */}
