@@ -32,7 +32,12 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center gap-2">
+          <img 
+            src="/favicon.svg" 
+            alt="Canela Logo" 
+            className="h-10 w-10"
+          />
           <span className="font-serif text-2xl font-bold text-primary-600">Canela</span>
         </Link>
 
