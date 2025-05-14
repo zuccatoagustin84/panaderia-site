@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-serif text-primary-700 mb-6">
-                Desde 1985, horneando tradición
+                Desde 1810, horneando tradición
               </h2>
               <div className="prose prose-slate max-w-none">
                 <p>
