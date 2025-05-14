@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -8,14 +8,19 @@ const Footer: React.FC = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-serif font-semibold mb-4">Panadería Artesanal</h3>
+            <h3 className="text-xl font-serif font-semibold mb-4">Canela Panadería Artesanal</h3>
             <p className="text-primary-100 mb-4">
-              Artesanos de la panadería desde 1985. Elaboramos productos de la más alta calidad con ingredientes naturales.
+              Elaboramos productos de la más alta calidad con ingredientes naturales y el sabor de siempre.
             </p>
             <div className="flex space-x-4">
-              <SocialIcon icon={<Facebook size={20} />} href="https://facebook.com" />
-              <SocialIcon icon={<Instagram size={20} />} href="https://instagram.com" />
-              <SocialIcon icon={<Twitter size={20} />} href="https://twitter.com" />
+              <SocialIcon 
+                icon={<Facebook size={20} />} 
+                href="https://www.facebook.com/p/Canela-Panader%C3%ADa-artesanal-100054347807917/" 
+              />
+              <SocialIcon 
+                icon={<Instagram size={20} />} 
+                href="https://www.instagram.com/canela_panaderia_soldini/" 
+              />
             </div>
           </div>
           
@@ -30,48 +35,34 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-serif font-medium mb-4">Categorías</h4>
-            <ul className="space-y-2">
-              <FooterLink to="/products?category=panes" label="Panes" />
-              <FooterLink to="/products?category=bollería" label="Bollería" />
-              <FooterLink to="/products?category=pasteles" label="Pasteles y Tartas" />
-              <FooterLink to="/products?category=dulces" label="Dulces" />
+            <h4 className="text-lg font-serif font-medium mb-4">Sucursales</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 mr-2 mt-0.5 text-secondary-400" />
+                <span>Pérez, Santa Fe</span>
+              </li>
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 mr-2 mt-0.5 text-secondary-400" />
+                <span>Soldini, Santa Fe</span>
+              </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-serif font-medium mb-4">Contacto</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-2 mt-0.5 text-secondary-400" />
-                <span>Calle Panaderos 123, Madrid, España</span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 text-secondary-400" />
-                <span>+34 912 345 678</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-2 text-secondary-400" />
-                <span>info@panaderiaartesanal.com</span>
-              </li>
-            </ul>
+            <h4 className="text-lg font-serif font-medium mb-4">Horarios</h4>
+            <p className="text-primary-100">
+              Lunes a Sábado:<br />
+              7:00 - 13:00<br />
+              16:00 - 20:00<br />
+              Domingos: Cerrado
+            </p>
           </div>
         </div>
         
         <div className="mt-12 pt-6 border-t border-primary-500">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-primary-200">
-              © {new Date().getFullYear()} Panadería Artesanal. Todos los derechos reservados.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/terms" className="text-sm text-primary-200 hover:text-white">
-                Términos y Condiciones
-              </Link>
-              <Link to="/privacy" className="text-sm text-primary-200 hover:text-white">
-                Política de Privacidad
-              </Link>
-            </div>
-          </div>
+          <p className="text-sm text-primary-200 text-center">
+            © {new Date().getFullYear()} Canela Panadería Artesanal. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>
