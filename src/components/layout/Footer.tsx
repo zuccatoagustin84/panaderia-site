@@ -8,7 +8,14 @@ const Footer: React.FC = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-serif font-semibold mb-4">Canela Panadería Artesanal</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/logo.jpg" 
+                alt="Canela Logo" 
+                className="h-12 w-12 rounded-full object-cover"
+              />
+              <h3 className="text-xl font-serif font-semibold">Canela</h3>
+            </div>
             <p className="text-primary-100 mb-4">
               Elaboramos productos de la más alta calidad con ingredientes naturales y el sabor de siempre.
             </p>
